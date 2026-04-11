@@ -137,7 +137,7 @@ a, button {
   <button onclick="showPage(3)">하드모드</button>
   <button onclick="showPage(4)">잡탕</button>
   <button onclick="showPage(5)">Friend</button>
-  <button onclick="showPage(6)">커미션/선물 모음</button>
+  <button onclick="showPage(6)">출처 표기용</button>
 </nav>
 
 <div id="content">
@@ -149,23 +149,13 @@ a, button {
 
   <!-- 업데이트 (오른쪽) -->
   <div class="update-section right">
-    <h2>업데이트 사항 (26.2.13)</h2>
+    <h2>업데이트 사항 (26.4.11)</h2>
 
-    <h4>이미지 다운로드 방식 변경</h4>
+    <h4>이미지 추가</h4>
     <p class="update-text">
-      이미지를 다운로드하면 파일의 생성 날짜가 업로드 날짜가 아니라
-      “다운로드한 날짜”로 저장됩니다.
+      더 많은 이미지가 추가되었습니다!
     </p>
 
-    <h4>여러 장 이미지 표시 (+n 배지)</h4>
-    <p class="update-text">
-      한 작품에 이미지가 여러 장일 경우, 썸네일 우측 상단에 +숫자 배지가 표시됩니다.
-    </p>
-
-    <h4>Friend 탭(페이지) 추가</h4>
-    <p class="update-text">
-      상단 메뉴에 Friend 탭이 추가되었습니다.
-    </p>
   </div>
     <br>
   <!-- 버그 (왼쪽) -->
@@ -191,7 +181,7 @@ a, button {
   </div>
   <!-- 버그 (왼쪽) -->
   <div class="update-section left">
-    <h6>버그 및 오타 문의: 0chorinku0@gmail.com<br>가벼운 것도 편하게 문의 OK</h6>
+    <h6>버그 및 오류 문의: 0chorinku0@gmail.com</h6>
   </div>
 
 </div>
@@ -285,7 +275,11 @@ const images = {
        { src:"https://pub-a82833c98a254446bf65db1f16fa9b05.r2.dev/AF/Original/AF36.png", extra:"플로리아나 개인" }]
     },
 
-    { src:"https://pub-a82833c98a254446bf65db1f16fa9b05.r2.dev/AF/Original/AF16.png", desc:"둘이 무슨 사이야", extra:"조명온도습도 너무 완벽해서 눈물 나오고 좋음<br><br>기준님 커미션 (크레페@F6XWALPc)" },
+    { src:"https://pub-a82833c98a254446bf65db1f16fa9b05.r2.dev/AF/Original/AF16.png", desc:"오마이갓...", extra:"조명온도습도 너무 완벽<br><br>기준님 커미션 (크레페@F6XWALPc)" ,
+      extraImages:[{ src:"https://pub-a82833c98a254446bf65db1f16fa9b05.r2.dev/AF/Original/AF35.png",
+      extra:"관상캐해<br><br>기준님 커미션 (크레페@F6XWALPc)" } ,{ src:"https://pub-a82833c98a254446bf65db1f16fa9b05.r2.dev/AF/Original/AF36.png",
+      extra:"기준님 커미션 (크레페@F6XWALPc)" }]
+    },
 
     { src:"https://pub-a82833c98a254446bf65db1f16fa9b05.r2.dev/AF/Original/AF3.png", desc:"쪽", extra:"오 뽀뽀하네" },
 
@@ -296,29 +290,29 @@ const images = {
         { src:"https://pub-a82833c98a254446bf65db1f16fa9b05.r2.dev/AF/Original/AF6.png", desc:"꼬질", extra:"아델까 꼬질" }
       ]
     },
-    { src:"https://pub-a82833c98a254446bf65db1f16fa9b05.r2.dev/AF/Original/AF9.png", desc:"인권유린박스", extra:"선 느낌이랑 색이 너무 예뻐<br><br>모기님 짭미션" },
+    { src:"https://pub-a82833c98a254446bf65db1f16fa9b05.r2.dev/AF/Original/AF9.png", desc:"인권유린박스", extra:"선 느낌이랑 색이 레전드<br><br>모기님 짭미션" },
 
-    { src:"https://pub-a82833c98a254446bf65db1f16fa9b05.r2.dev/AF/Original/AF21.png", desc:"부비부비", extra:"건조한데 딱 붙어있는 게 완벽하다고 생각<br><br>로챤님 커미션 (크레페@QBCwJJVc)" },
+    { src:"https://pub-a82833c98a254446bf65db1f16fa9b05.r2.dev/AF/Original/AF21.png", desc:"부비부비", extra:"건조한데 딱 붙어있는 게 완벽<br><br>로챤님 커미션 (크레페@QBCwJJVc)" },
 
-    { src:"https://pub-a82833c98a254446bf65db1f16fa9b05.r2.dev/AF/Original/AF22.jpeg", desc:"레전드사귀는것같은", extra:"커미션 제목이 너무 웃겼다<br>이거 진짜 좋아...<br><br>말미잘님 커미션 (크레페@malmigal_)" },
+    { src:"https://pub-a82833c98a254446bf65db1f16fa9b05.r2.dev/AF/Original/AF22.jpeg", desc:"레전드사귀는것같은", extra:"커미션 제목이 너무 웃겼음<br>이거 진짜 좋아...<br><br>말미잘님 커미션 (크레페@malmigal_)" },
 
     { src:"https://pub-a82833c98a254446bf65db1f16fa9b05.r2.dev/AF/Original/AF15.png", desc:"낙서", extra:"서늘하다. 가슴에 비수가 날아와 꽂힌다.",
       extraImages:[{ src:"https://pub-a82833c98a254446bf65db1f16fa9b05.r2.dev/AF/Original/AF14.png", extra:"좀 개(dog)같다" }]
     },
 
-    { src:"https://pub-a82833c98a254446bf65db1f16fa9b05.r2.dev/AF/Original/AF17.png", desc:"휴식", extra:"플로리 키 작은 거 아님<br>자세 때문에 작아보이는 거임<br>잘 재보면 둘이 비슷함 <br>절대로 저 정도 키 차이가 아님" },
+    { src:"https://pub-a82833c98a254446bf65db1f16fa9b05.r2.dev/AF/Original/AF17.png", desc:"휴식", extra:"자세 때문에 작아보이네 <br>절대로 저 정도 키 차이가 아님" },
 
     { src:"https://pub-a82833c98a254446bf65db1f16fa9b05.r2.dev/AF/Original/AF20.png", desc:"키못방", extra:"건조하고 건조함" },
 
     { src:"https://pub-a82833c98a254446bf65db1f16fa9b05.r2.dev/AF/Original/AF23.png", desc:"바보", extra:"멍청이" },
 
-    { src:"https://pub-a82833c98a254446bf65db1f16fa9b05.r2.dev/AF/Original/AF33.jpg", desc:"헐", extra:"농사 성공<br>이 건조함이 너무 좋다<br>약간 나 죽기 3초 전 같은 느낌(과장 포함)" },
+    { src:"https://pub-a82833c98a254446bf65db1f16fa9b05.r2.dev/AF/Original/AF33.jpg", desc:"헐", extra:"농사 성공<br>이 건조함이 레전드<br>약간 나 죽기 3초 전 같은 느낌(과장 포함)" },
 
-    { src:"https://pub-a82833c98a254446bf65db1f16fa9b05.r2.dev/AF/Original/AF35.jpg", desc:"머리가 커서 안 닿아", extra:"바보(positive)<br>진짜 너무 귀여워 눈꼬리 끝 부분 디테일 너무 좋아...<br><br>개구리님 커미션",
+    { src:"https://pub-a82833c98a254446bf65db1f16fa9b05.r2.dev/AF/Original/AF35.jpg", desc:"머리가 커서 안 닿아", extra:"바보(positive)<br>진짜 너무 귀여워 눈꼬리 끝 부분 디테일 너무 좋다<br><br>개구리님 커미션",
       extraImages:[{ src:"https://pub-a82833c98a254446bf65db1f16fa9b05.r2.dev/AF/Original/AF34.jpg", extra:"둘이 뭐 해<br><br>개구리님 커미션" }]
     },
 
-    { src:"https://pub-a82833c98a254446bf65db1f16fa9b05.r2.dev/AF/Original/AF19.png", desc:"응시", extra:"팰까 말까 고민 중인 아델리카님<br>물론 패는 건 플로리가 한다" },
+    { src:"https://pub-a82833c98a254446bf65db1f16fa9b05.r2.dev/AF/Original/AF19.png", desc:"응시", extra:"팰까 말까 고민 중인 아델님<br>물론 패는 건 플로리가 함" },
 
     { src:"https://pub-a82833c98a254446bf65db1f16fa9b05.r2.dev/AF/Original/AF18.png", desc:"언젠가 완성하겠지", extra:"라고 22년도에 적었는데요?" },
 
@@ -326,7 +320,7 @@ const images = {
 
     { src:"https://pub-a82833c98a254446bf65db1f16fa9b05.r2.dev/AF/Original/AF29.png", desc:"머갈 둥둥", extra:"ㅍ-ㅍ ㅇ.ㅇ" },
 
-    { src:"https://pub-a82833c98a254446bf65db1f16fa9b05.r2.dev/AF/Original/AF24.png", desc:"차이", extra:"어디에 넣을까 고민하다 귀찮아서<br>걍 오리지널에 넣음" },
+    { src:"https://pub-a82833c98a254446bf65db1f16fa9b05.r2.dev/AF/Original/AF24.png", desc:"차이", extra:"어디에 넣을까 고민하다 귀찮아서<br>오리지널에 넣음" },
 
     { src:"https://pub-a82833c98a254446bf65db1f16fa9b05.r2.dev/AF/Original/AF38.png", desc:"꼬옥", extra:"휘핑크림 얼마나 줘야할지 감도 안 옴<br><br>지미님 커미션(크레페@1_585)" },
 
@@ -336,7 +330,19 @@ const images = {
 
     { src:"https://pub-a82833c98a254446bf65db1f16fa9b05.r2.dev/AF/Original/AF41.png", desc:"쪽", extra:"오오오 키스하네<br>근데 키스가 문제가 아님" },
 
-    { src:"https://pub-a82833c98a254446bf65db1f16fa9b05.r2.dev/AF/Original/AF42.png", desc:"업무 수행 중", extra:"이게 뭐냐면 아델리카가 일하는 게 숲지기 비슷한건데 거기서 과거미래현재 알려주는데 아무나한테 알려주면 완전 개판나니까 엄격한 규칙이 있는데 아무튼상대방한테눈은보여주면안되는데플로리아나는정식으로일하는것보단알바처럼호위같은거하는데아무튼" },
+    { src:"https://pub-a82833c98a254446bf65db1f16fa9b05.r2.dev/AF/Original/AF42.png", desc:"냐냐냥", extra:"이게 뭐냐면 아델리카가 일하는 게 숲지기 비슷한건데 거기서 과거미래현재 알려주는데 아무나한테 알려주면 완전 개판나니까 엄격한 규칙이 있는데 아무튼상대방한테눈은보여주면안되는데플로리아나는정식으로일하는것보단알바처럼호위같은거하는데아무튼" },
+
+    { src:"https://pub-a82833c98a254446bf65db1f16fa9b05.r2.dev/AF/Original/AF49.png", desc:"개(dog)같다", extra:"트레틀 사용함" },
+
+    { src:"https://pub-a82833c98a254446bf65db1f16fa9b05.r2.dev/AF/Original/AF50.png", desc:"찰싹", extra:"나도 내 캐 눈 색 바꿔먹더라" },
+
+    { src:"https://pub-a82833c98a254446bf65db1f16fa9b05.r2.dev/AF/Original/AF43.png", desc:"밀착", extra:"오오!!" },
+
+    { src:"https://pub-a82833c98a254446bf65db1f16fa9b05.r2.dev/AF/Original/AF45.png", desc:"꼬옥", extra:"얼레리꼴레리 손 잡았대요<br><br>주잇테님 커미션 (크레페 @Bbaap)" },
+
+    { src:"https://pub-a82833c98a254446bf65db1f16fa9b05.r2.dev/AF/Original/AF46.png", desc:"관상 캐해", extra:"너무 잘 맞아서 놀랐음<br><br>듀...님 커미션 (크레페 @duee)" },
+
+    { src:"https://pub-a82833c98a254446bf65db1f16fa9b05.r2.dev/AF/Original/AF44.jpg", desc:"좋은 느낌", extra:"이 조온습이 좋다<br><br>한달수님 커미션 (크레페 @jTV6xeEc)" },
 
     { src:"https://pub-a82833c98a254446bf65db1f16fa9b05.r2.dev/AF/Original/AF.png", desc:"", extra:"" },
 
@@ -385,11 +391,17 @@ const images = {
 
 
 
-    { src:"https://pub-a82833c98a254446bf65db1f16fa9b05.r2.dev/AF/BeforeTheWorld/BTW_23.png", desc:"날 믿어, 내가 널 믿는 것처럼!", extra:"대사가 레전드 좋다<br><br>바삭콰삭님 커미션 (크레페@Basak8asak)" },
+    { src:"https://pub-a82833c98a254446bf65db1f16fa9b05.r2.dev/AF/BeforeTheWorld/BTW_23.png", desc:"Believe me, As I believe you!", extra:"...Already<br>대사 레전드 좋다<br><br>바삭콰삭님 커미션 (크레페@Basak8asak)" },
 
     { src:"https://pub-a82833c98a254446bf65db1f16fa9b05.r2.dev/AF/BeforeTheWorld/BTW_24.png", desc:"낙서", extra:"ㅍㅍㅅㅅ" },
 
     { src:"https://pub-a82833c98a254446bf65db1f16fa9b05.r2.dev/AF/BeforeTheWorld/BTW_25.png", desc:"미완성", extra:"완성하면 업데이트 하겠지" },
+
+    { src:"https://pub-a82833c98a254446bf65db1f16fa9b05.r2.dev/AF/BeforeTheWorld/BTW_26.png", desc:"같이 갈래?", extra:"제발저요" },
+
+    { src:"https://pub-a82833c98a254446bf65db1f16fa9b05.r2.dev/AF/BeforeTheWorld/BTW_27.png", desc:"ㅍㅍㅅㅅ", extra:"끝장내주는 시간을 보냈나 본데" },
+
+    { src:"https://pub-a82833c98a254446bf65db1f16fa9b05.r2.dev/AF/BeforeTheWorld/BTW_28.png", desc:"완성하겠지", extra:"언젠가 완성하겠지" },
 
     { src:"https://pub-a82833c98a254446bf65db1f16fa9b05.r2.dev/AF/BeforeTheWorld/BTW_.png", desc:"", extra:"" },
   ],
@@ -407,7 +419,7 @@ const images = {
 
     { src:"https://pub-a82833c98a254446bf65db1f16fa9b05.r2.dev/AF/HardMode/HardMode_7.png", desc:"눈 맞춤", extra:"이 분 그림 분위기가 완전 자극적임(너무 좋다는 뜻)<br>기준님 커미션 (크레페@F6XWALPc)", extraImages:[{ src:"https://pub-a82833c98a254446bf65db1f16fa9b05.r2.dev/AF/HardMode/HardMode_8.png", extra:"곤란한 표정 너무 어흑<br>기준님 커미션 (크레페@F6XWALPc)" }] },
 
-    { src:"https://pub-a82833c98a254446bf65db1f16fa9b05.r2.dev/AF/HardMode/HardMode_9.png", desc:"확인", extra:"색 뺀 후" },
+    { src:"https://pub-a82833c98a254446bf65db1f16fa9b05.r2.dev/AF/HardMode/HardMode_9.png", desc:"색 뺀 후", extra:"시간의 흐름마다 관계성이랑 외관이 묘하게 달라지는데 구분하자니 그건 귀찮고" },
 
     { src:"https://pub-a82833c98a254446bf65db1f16fa9b05.r2.dev/AF/HardMode/HardMode_10.png", desc:"전신", extra:"기본", extraImages:[{ src:"https://pub-a82833c98a254446bf65db1f16fa9b05.r2.dev/AF/HardMode/HardMode_11.png", extra:"색 뺀 후" }] },
 
@@ -417,7 +429,7 @@ const images = {
 
     { src:"https://pub-a82833c98a254446bf65db1f16fa9b05.r2.dev/AF/HardMode/HardMode_18.png", desc:"밀착", extra:"농사 성공<br>너무 ()린다", extraImages:[{ src:"https://pub-a82833c98a254446bf65db1f16fa9b05.r2.dev/AF/HardMode/HardMode_17.png", extra:"농사 대성공" }] },
 
-    { src:"https://pub-a82833c98a254446bf65db1f16fa9b05.r2.dev/AF/HardMode/HardMode_14.png", desc:"성스러움", extra:"커미션 참고 자료 전신이랑 분위기 참고용으로 이것만 주면 어떻게 나올지 궁금함" },
+    { src:"https://pub-a82833c98a254446bf65db1f16fa9b05.r2.dev/AF/HardMode/HardMode_14.png", desc:"오오", extra:"커미션 참고 자료 전신이랑 분위기 참고용으로 이것만 주면 어떻게 나올지 궁금함" },
 
     { src:"https://pub-a82833c98a254446bf65db1f16fa9b05.r2.dev/AF/HardMode/HardMode_15.png", desc:"쨍", extra:"색 빠짐 후" },
 
@@ -425,7 +437,11 @@ const images = {
 
     { src:"https://pub-a82833c98a254446bf65db1f16fa9b05.r2.dev/AF/HardMode/HardMode_20.png", desc:"낙서", extra:"특: 재밌지거림" },
 
-    { src:"https://pub-a82833c98a254446bf65db1f16fa9b05.r2.dev/AF/HardMode/HardMode_21.jpg", desc:"해피해피", extra:"저러면 보통 아델리카가 X된 거겠죠" },
+    { src:"https://pub-a82833c98a254446bf65db1f16fa9b05.r2.dev/AF/HardMode/HardMode_21.jpg", desc:"해피해피", extra:"저러면 보통 아델리카가 X된 거겠지" },
+
+    { src:"https://pub-a82833c98a254446bf65db1f16fa9b05.r2.dev/AF/HardMode/HardMode_22.png", desc:"오", extra:"사람 고쳐 쓸 수 없음?<br>재조립해도?" },
+
+    { src:"https://pub-a82833c98a254446bf65db1f16fa9b05.r2.dev/AF/HardMode/HardMode_23.png", desc:"좋은느낌", extra:"두 분은 재난이십니다<br><br>공백님 커미션(크레페 @z_erowhite)" },
 
     { src:"https://pub-a82833c98a254446bf65db1f16fa9b05.r2.dev/AF/HardMode/HardMode_.png", desc:"", extra:"" },
   ],
@@ -434,7 +450,7 @@ const images = {
   4: [ //잡탕
     { src:"https://pub-a82833c98a254446bf65db1f16fa9b05.r2.dev/AF/AFC/AFC1.png", desc:"AFC", extra:"실험체 비슷"},
 
-      { src:"https://pub-a82833c98a254446bf65db1f16fa9b05.r2.dev/AF/Utopia/Utopia_7.png", desc:"크리처 연구원AU", extra:"진지하게 이거 받고 거의 30분인가 50분인가 감상함(real)<br>솔직히 아직도 이거 보면 너무 좋아서 기본 10분이상 감상 타임 가져요(과장X)<br>말미잘님 커미션 (크레페@malmigal_)",
+      { src:"https://pub-a82833c98a254446bf65db1f16fa9b05.r2.dev/AF/Utopia/Utopia_7.png", desc:"크리처 연구원AU", extra:"진지하게 이거 받고 거의 30분인가 50분인가 감상함(real)<br>아직도 이거 보면 너무 좋아서 기본 10분이상 감상 타임을 좀...<br>말미잘님 커미션 (크레페@malmigal_)",
       extraImages:[
         { src:"https://pub-a82833c98a254446bf65db1f16fa9b05.r2.dev/AF/Utopia/Utopia_4.png",extra:"한 장 정리" },
         { src:"https://pub-a82833c98a254446bf65db1f16fa9b05.r2.dev/AF/Utopia/Utopia_1.png",extra:"크리처 전신" }, 
@@ -475,7 +491,9 @@ const images = {
 
     { src:"https://pub-a82833c98a254446bf65db1f16fa9b05.r2.dev/AF/Original/AF16.png", desc:"기준님", extra:"기준님 커미션 (크레페@F6XWALPc)",
       extraImages:[{ src:"https://pub-a82833c98a254446bf65db1f16fa9b05.r2.dev/AF/HardMode/HardMode_7.png",extra:"기준님 커미션 (크레페@F6XWALPc)" },
-        { src:"https://pub-a82833c98a254446bf65db1f16fa9b05.r2.dev/AF/HardMode/HardMode_8.png", extra:"기준님 커미션 (크레페@F6XWALPc)" }
+        { src:"https://pub-a82833c98a254446bf65db1f16fa9b05.r2.dev/AF/HardMode/HardMode_8.png", extra:"기준님 커미션 (크레페@F6XWALPc)" }, { src:"https://pub-a82833c98a254446bf65db1f16fa9b05.r2.dev/AF/Original/AF35.png",
+      extra:"기준님 커미션 (크레페@F6XWALPc)" } ,{ src:"https://pub-a82833c98a254446bf65db1f16fa9b05.r2.dev/AF/Original/AF36.png",
+      extra:"기준님 커미션 (크레페@F6XWALPc)" }
       ]
     },
 
@@ -517,6 +535,17 @@ const images = {
 
     { src:"https://pub-a82833c98a254446bf65db1f16fa9b05.r2.dev/AF/BeforeTheWorld/BTW_23.png", desc:"바삭콰삭님", extra:"바삭콰삭님 커미션 (크레페@Basak8asak)" },
 
+    { src:"https://pub-a82833c98a254446bf65db1f16fa9b05.r2.dev/AF/HardMode/HardMode_23.png", desc:"공백님", extra:"공백님 커미션(크레페 @z_erowhite)" },
+
+    { src:"https://pub-a82833c98a254446bf65db1f16fa9b05.r2.dev/AF/Original/AF46.png", desc:"듀...님", extra:"듀...님 커미션 (크레페 @duee)" },
+
+    { src:"https://pub-a82833c98a254446bf65db1f16fa9b05.r2.dev/AF/Original/AF45.png", desc:"주잇테님", extra:"주잇테님 커미션 (크레페 @Bbaap)" },
+
+    { src:"https://pub-a82833c98a254446bf65db1f16fa9b05.r2.dev/AF/Original/AF44.jpg", desc:"한달수님", extra:"한달수님 커미션 (크레페 @jTV6xeEc)" },
+
+
+
+
     { src:"", desc:"", extra:"",
       extraImages:[{ src:"",extra:"" }
       ]
@@ -541,12 +570,12 @@ function showPage(n){
   const c=document.getElementById("content");
   // 각 탭마다 제목과 설명
   const tabInfo = {
-    1: {title:"오리지널", desc:"기본"},
-    2: {title:"시초의 세계", desc:"오리지널 과거<br>ㅍㅍ^^"},
-    3: {title:"하드모드", desc:"다른 세계선<br>뒤틀린 걸 보면 도파민용"},
+    1: {title:"오리지널", desc:"멸망한 세계 탈출 후 새로운 세계에 정착하기 프로젝트<br>ㅍㅍㅇㅇ"},
+    2: {title:"시초의 세계", desc:"문명이 퇴색하고 발생한 자연과 사는 존재들<br>오리지널 과거<br>ㅍㅍ^^"},
+    3: {title:"하드모드", desc:"각자 완결될 수 있었지만 이용과 감정이 뒤엉켜 뒤틀려버린 관계"},
     4: {title:"잡탕", desc:"따로 분류하기엔 연성이 적음"},
     5: {title:"Friend", desc:"전체 혹은 아델플로 외"},
-    6: {title:"전체 모음", desc:"출처 표기용<br>코멘트 없이 담백하게 적음<br>저 이 작품들 10년 뒤에도 감상할 예정이에요"},
+    6: {title:"출처 표기용", desc:"커미션/받은 거 출처 표기용<br>코멘트 없이 담백하게 적음<br>10년 뒤에도 감상할 예정"},
   };
 
   let html = `<h1>${tabInfo[n].title}</h1><p>${tabInfo[n].desc}</p><div class="gallery">`;
